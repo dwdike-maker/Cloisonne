@@ -13,7 +13,6 @@ Featured pieces are listed at $500 each. Custom commission pricing is discussed 
 ```text
 .
 ├── index.html
-├── favicon.svg
 ├── README.md
 ├── DEPLOYMENT.md
 ├── IMAGE-GUIDE.txt
@@ -22,6 +21,8 @@ Featured pieces are listed at $500 each. Custom commission pricing is discussed 
 ├── js/
 │   └── script.js
 └── images/
+    ├── dwd-logo.png
+    ├── charizard.jpg
     ├── .gitkeep
     └── Add approved JPG artwork photos here
 ```
@@ -37,6 +38,8 @@ No build step or package installation is required.
 Serving the folder over HTTP is recommended for consistent browser behavior. All site navigation remains within `index.html`.
 
 ## Artwork and inquiries
+
+The supplied `images/dwd-logo.png` is the studio mark used in the header, maker and contact sections, footer, and favicon.
 
 The supplied `images/charizard.jpg` is connected to the hero, flagship piece, and gallery reveal. Other artwork panels use designed placeholders until their photos are supplied and connected; see [IMAGE-GUIDE.txt](IMAGE-GUIDE.txt) for filenames and instructions.
 

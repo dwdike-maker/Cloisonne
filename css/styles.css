@@ -149,13 +149,16 @@ button {
   color: white;
 }
 
-.wordmark-star {
-  display: inline-block;
-  margin: -0.35rem 0 0 0.38rem;
-  color: var(--gold);
-  font-family: var(--serif);
-  font-size: 0.68rem;
-  vertical-align: top;
+.wordmark .brand-logo {
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+  object-fit: contain;
+}
+
+.wordmark--footer .brand-logo {
+  width: 3.4rem;
+  height: 3.4rem;
 }
 
 .site-nav {
@@ -1492,28 +1495,6 @@ h2 em {
     linear-gradient(155deg, #27334c, #171d31 72%, #24213a);
 }
 
-.about-halo {
-  position: absolute;
-  width: 70%;
-  aspect-ratio: 1;
-  border: 1px solid rgb(239 201 95 / 42%);
-  border-radius: 50%;
-  box-shadow: 0 0 3rem rgb(93 186 231 / 12%), inset 0 0 2rem rgb(238 193 95 / 9%);
-}
-
-.about-initials {
-  position: relative;
-  color: #f0d88f;
-  font-family: var(--serif);
-  font-size: clamp(5rem, 11vw, 8.5rem);
-  letter-spacing: -0.15em;
-  text-shadow: 0 0 2rem rgb(239 201 95 / 33%);
-}
-
-.about-initials span {
-  color: var(--blue);
-}
-
 .about-mark > small {
   position: absolute;
   bottom: 1rem;
@@ -1623,18 +1604,6 @@ h2 em {
   padding: 0.8rem;
   border: 1px solid var(--line);
   background: #192137;
-}
-
-.contact-stamp > span {
-  display: grid;
-  width: 2.3rem;
-  height: 2.3rem;
-  place-items: center;
-  border: 1px solid rgb(239 201 95 / 48%);
-  border-radius: 50%;
-  color: var(--gold);
-  font-family: var(--serif);
-  font-size: 1.2rem;
 }
 
 .contact-stamp small {
@@ -2933,11 +2902,6 @@ body {
     linear-gradient(155deg, #1b3b70, #111e3e 72%, #2b244f);
 }
 
-.about-halo {
-  border-color: rgb(255 211 76 / 56%);
-  box-shadow: 0 0 3.5rem rgb(67 190 255 / 19%), inset 0 0 2rem rgb(255 192 70 / 14%);
-}
-
 .collector-notes {
   border-color: rgb(79 167 255 / 20%);
   background:
@@ -3238,10 +3202,6 @@ a:hover {
 .wordmark,
 .wordmark:hover {
   color: var(--secondary);
-}
-
-.wordmark-star {
-  color: var(--primary);
 }
 
 .site-nav a {
@@ -3741,21 +3701,14 @@ h2 em {
 
 .about-mark {
   border-color: var(--border);
-  background: linear-gradient(155deg, #eaf0fa, #ffffff 72%, #fff8d8);
+  background: var(--surface);
 }
 
-.about-halo {
-  border-color: rgb(0 48 135 / 35%);
-  box-shadow: 0 0 3rem rgb(0 48 135 / 8%), inset 0 0 2rem rgb(255 215 0 / 15%);
-}
-
-.about-initials {
-  color: var(--primary);
-  text-shadow: 0 0 2rem rgb(229 45 39 / 15%);
-}
-
-.about-initials span {
-  color: var(--secondary);
+.about-mark > .brand-logo {
+  position: relative;
+  z-index: 1;
+  width: min(76%, 20rem);
+  height: auto;
 }
 
 .about-copy > p:not(.eyebrow),
@@ -3792,9 +3745,10 @@ h2 em {
   background: #ffffff;
 }
 
-.contact-stamp > span {
-  border-color: var(--primary);
-  color: var(--primary);
+.contact-stamp > .brand-logo {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
 }
 
 .contact-stamp small,
